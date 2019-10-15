@@ -32,8 +32,10 @@ Un ejemplo del archivo de configuración **appsettings.json** es:
 4. Abrir la consola en el menú **Herramientas** -> **Administrador de paquetes NuGet** -> **Consola del Administrador de paquetes**
 5. Dentro la consola copiar y pega la siguiente linea, luego pulsar la tecla *enter* para confirmar:
 ```sh
-dotnet ef migrations add Initial -p IdentityTemplate -c db_usuarios
+dotnet ef migrations add Initial -p IdentityTemplate -c AplicacionDbContext
 ```
+**AplicacionDbContext**: es la clase que contiene al contexto del modelo de datos
+
 6. Realizar el mismo procedimiento con la siguiente linea:
 ```sh
 dotnet ef database update -p IdentityTemplate
